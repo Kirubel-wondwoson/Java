@@ -6,6 +6,14 @@ public class Add {
     return sum;
   }
   public static void main(String []args){
-    add(20.4,40.1);
+    Scanner input = new Scanner(System.in);
+    System.out.println("Enter two numbers");
+    System.out.print("Number 1 : ");
+    double n1 = input.nextDouble();
+    System.out.print("Number 2 : ");
+    double n2 = input.nextDouble();
+    
+    double result = add(n1, n2);
+    System.out.println("Sum = " + result);
   }
 }
