@@ -12,6 +12,9 @@ public class CheckEvenOdd {
     return display;
   }
   public static void main(String []args){
-    checkEvenOdd(3);
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter a number : ");
+    int num = input.nextInt();
+    System.out.println(checkEvenOdd(num));
   }
 }
